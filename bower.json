@@ -1,0 +1,18 @@
+{
+  "name": "angular-test",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ThomasHaddad/angular-test",
+  "authors": [
+    "Thomas Haddad <thomas.af.haddad@gmail.com>"
+  ],
+  "description": "angular test with karma",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
