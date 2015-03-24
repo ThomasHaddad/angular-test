@@ -30,5 +30,13 @@ describe('In order to check the strength of my password as a visitor i need to s
             // then
             expect($scope.strength).toEqual("strong");
         });
+        it('sets the strength to "medium" if the password is 123456789', function() {
+            // given
+            $scope.password = "123456789";
+            // and
+            $scope.grade();
+            // then
+            expect($scope.strength).toEqual("medium");
+        });
     });
 });
