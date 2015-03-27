@@ -7,6 +7,12 @@
     <script src="app/app.js"></script>
     <script src="app/controllers/password.controller.js"></script>
     <script src="app/filters/upperCase.filter.js"></script>
+    <script src="app/directives/stateful.directive.js"></script>
+    <style>
+        button.test-value:after{
+            content:" added test-value";
+        }
+    </style>
 </head>
 <body ng-app="angular-test">
 <div ng-controller="passwordController">
@@ -14,6 +20,9 @@
 </div>
 <div>
     <input type="text" ng-model="message"/> {{message | upperCase}}
+</div>
+<div class="button">
+    <button id="button" ng-stateful="test-value">click</button>
 </div>
 </body>
 </html>
